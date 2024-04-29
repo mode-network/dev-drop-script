@@ -15,8 +15,10 @@ func main() {
 	}
 
 	if len(os.Args) != 3 {
-		panic(fmt.Sprintf("Usage: create-dev-drop input.csv output.json"))
+		log.Println(fmt.Sprintf("Usage: create-dev-drop input.csv output.json"))
+		os.Exit(1)
 	}
+
 	inFile := os.Args[1]
 	outFile := os.Args[2]
 	scripts.GenerateDevDropSafeFile(inFile, outFile, scripts.GetConfig())
