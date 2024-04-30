@@ -29,9 +29,9 @@ type MetaType struct {
 }
 
 type TransactionRecord struct {
-	To                   string
-	Value                string
-	Data                 *[]byte
+	To                   string               `json:"to"`
+	Value                string               `json:"value"`
+	Data                 *[]byte              `json:"data"`
 	ContractMethod       ContractMethodType   `json:"contractMethod"`
 	ContractInputsValues ContractInputsRecord `json:"contractInputsValues"`
 }
