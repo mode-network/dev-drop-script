@@ -1,3 +1,4 @@
 .env
 transactions-batch.json
 create-dev-drop
+.DS_Store
